@@ -1,4 +1,4 @@
-# NestJS E-commerce Application
+# NestJS Product Orders Application
 
 The application includes modules for managing products and orders.
 
