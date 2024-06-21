@@ -9,7 +9,6 @@ export class MongooseConnectionService implements OnModuleInit {
   constructor(@InjectConnection() private readonly connection: Connection) {}
 
   onModuleInit() {
-    this.logger.log('connection to the database', process.env.MONGO_URL);
     this.connection.on('connected', () => {
       this.logger.log('Mongoose connected to the database');
     });
